@@ -1,6 +1,6 @@
 const RecentProjects = ({ repos }) => (
   <div>
-    <h2 className="text-2xl font-semibold">Recent Projects</h2>
+    <h2 className="text-2xl font-semibold">Github Projects</h2>
     <div className="grid grid-cols-2 gap-4 mt-4">
       {repos.map((repo) => (
         <div key={repo.id} className="bg-zinc-800 p-4 rounded-lg shadow-md">

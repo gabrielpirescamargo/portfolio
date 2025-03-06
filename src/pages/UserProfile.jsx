@@ -4,6 +4,7 @@ import ExperienceList from "../components/ExperienceList";
 import RecentProjects from "../components/RecentProjects";
 import { fetchGitHubData } from "../services/githubService";
 import EducationList from "../components/EducationList";
+import Techs from "../components/Techs";
 
 const UserProfile = () => {
   const [userData, setUserData] = useState(null);
@@ -24,9 +25,11 @@ const UserProfile = () => {
       <div className="flex flex-col md:flex-row items-start gap-6 w-full max-w-6xl">
         <div className="flex flex-col gap-4">
           <ProfileCard userData={userData} />
+          <Techs/>
           <RecentProjects repos={repos} />
         </div>
         <div className="w-full flex flex-col gap-4">
+
           <ExperienceList />
           <EducationList />
         </div>

@@ -1,11 +1,7 @@
 import {
-  FaAngular,
-  FaJava,
-  FaJs,
+
   FaMapMarkerAlt,
-  FaNode,
-  FaReact,
-  FaVuejs,
+ 
 } from "react-icons/fa";
 
 const ProfileCard = ({ userData }) => (
@@ -25,16 +21,7 @@ const ProfileCard = ({ userData }) => (
     <p className="mt-2 text-zinc-400 flex items-center gap-2">
       <FaMapMarkerAlt /> São Paulo, Brazil
     </p>
-    <p>
-      <div className="flex flex-row gap-2 mt-2">
-        <FaJs />
-        <FaReact />
-        <FaNode />
-        <FaJava />
-        <FaAngular />
-        <FaVuejs />
-      </div>
-    </p>
+ 
   </div>
 );
 

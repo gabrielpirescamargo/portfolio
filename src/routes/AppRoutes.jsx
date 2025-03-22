@@ -6,7 +6,7 @@ import CourseDetails from "../pages/CourseDetails";
 const AppRoutes = () => (
   <div>
     {/* <UserProfile />  */}
-    <Router>
+    <Router basename="/">
       <Routes>
         <Route path="/" element={<UserProfile />} />
         <Route path="/pires-code" element={<CourseLandingPage />}/>

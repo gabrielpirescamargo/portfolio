@@ -21,6 +21,8 @@ const ProfileCard = ({ userData }) => {
         {userData?.name || userData?.login}
       </h1>
       <p className="text-zinc-100">@{userData?.login}</p>
+    {hovered && window.location.href.includes('pires-code')  &&<p className="mt-2 text-zinc-300">Clique para saber mais</p>
+}
       {!hovered && (
         <>
           <p className="mt-2 text-zinc-300">Full Stack Developer @ IBM</p>

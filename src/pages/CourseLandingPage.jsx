@@ -205,8 +205,25 @@ const CourseLandingPage = () => {
         </section>
 
         <section className="mb-10 flex flex-col gap-4 mx-6 justify-center lg:text-center ">
-          <h2 className="text-3xl font-bold mb-6">Planos</h2>
+          <h2 className="text-3xl font-bold mb-6">Valores</h2>
           <div className="flex flex-col md:flex-row  gap-6 cursor-pointer justify-center">
+            <div
+              onClick={() =>
+                (window.location.href =
+                  "https://wa.me/5519999740273?text=Gostaria%20de%uma%20aula%20Adicional%20")
+              }
+              className="bg-zinc-800 p-6 rounded-lg shadow-lg w-100 text-center flex flex-col justify-center items-center transform transition duration-300 hover:scale-105 hover:shadow-2xl"
+            >
+              <h3 className="text-2xl font-bold mb-2">Aula adicional</h3>
+              <p className="text-lg mb-4">1 aula (1:00hr)</p>
+              <span className="text-3xl font-extrabold">R$40</span>
+              <button
+                className=" cursor-pointer bg-[#00B7EA] hover:bg-[#007EC4] text-white py-2 px-4 rounded-lg w-40 mt-4"
+                href=""
+              >
+                Escolher plano
+              </button>
+            </div>
             <div
               onClick={() =>
                 (window.location.href =
@@ -216,7 +233,7 @@ const CourseLandingPage = () => {
             >
               <h3 className="text-2xl font-bold mb-2">Mensal básico</h3>
               <p className="text-lg mb-4">1 aula por semana (1:00hr)</p>
-              <span className="text-3xl font-extrabold">R$100</span>
+              <span className="text-3xl font-extrabold">R$120</span>
               <button
                 className=" cursor-pointer bg-[#00B7EA] hover:bg-[#007EC4] text-white py-2 px-4 rounded-lg w-40 mt-4"
                 href=""
@@ -241,6 +258,8 @@ const CourseLandingPage = () => {
                 Escolher plano
               </button>
             </div>
+
+            
           </div>
         </section>
 

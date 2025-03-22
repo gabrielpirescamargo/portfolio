@@ -117,7 +117,7 @@ const CourseLandingPage = () => {
             conteúdos de forma eficiente.
           </p>
         </section>
-        <ul className="list-none flex flex-row ml-6 flex-wrap">
+        <ul className="list-none flex flex-row ml-6 flex-wrap gap-2">
           {skills.map((skill) => {
             return (
               <li key={skill.name}>

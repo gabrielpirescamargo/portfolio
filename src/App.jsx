@@ -1,4 +1,5 @@
-import AppRoutes from "./routes/AppRoutes";
+import AppRoutes from "./routes/AppRoutes.jsx";
+import './globals.scss'
 
 const App = () => <AppRoutes />;
 

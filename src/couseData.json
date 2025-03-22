@@ -1,0 +1,254 @@
+{
+    "courses": [
+      {
+        "title": "🔢 Lógica de Programação",
+        "id": "logica",
+        "levels": [
+          {
+            "level": "Iniciante",
+            "topics": [
+              {
+                "title": "Introdução à Lógica de Programação",
+                "items": [
+                  "Estruturas de controle (if, else, switch)",
+                  "Operadores aritméticos, lógicos e relacionais",
+                  "Tipos de dados: números, strings, booleans"
+                ]
+              },
+              {
+                "title": "Algoritmos Básicos",
+                "items": [
+                  "Introdução a Algoritmos",
+                  "Resolução de problemas simples com algoritmos",
+                  "Fluxogramas e pseudocódigo"
+                ]
+              },
+              {
+                "title": "Laços de Repetição",
+                "items": [
+                  "Laços: for, while e do...while",
+                  "Uso de laços para repetição de tarefas"
+                ]
+              },
+              {
+                "title": "Funções",
+                "items": [
+                  "Definição e chamada de funções",
+                  "Parâmetros e retorno de funções",
+                  "Funções anônimas"
+                ]
+              }
+            ]
+          },
+          {
+            "level": "Intermediário",
+            "topics": [
+              {
+                "title": "Estruturas de Dados",
+                "items": [
+                  "Arrays (vetores)",
+                  "Objetos (dicionários)",
+                  "Manipulação de arrays e objetos"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "💻 Front-end",
+        "id": "frontend",
+        "levels": [
+          {
+            "level": "Iniciante",
+            "topics": [
+              {
+                "title": "HTML Básico",
+                "items": [
+                  "Estrutura de um documento HTML",
+                  "Tags HTML: <html>, <head>, <body>, <div>, <span>, etc.",
+                  "Atributos HTML",
+                  "Listas, tabelas, links e imagens"
+                ]
+              },
+              {
+                "title": "CSS Básico",
+                "items": [
+                  "Seletores CSS",
+                  "Cores, fontes, bordas e margem",
+                  "Box Model",
+                  "Layouts simples com display, position, flexbox"
+                ]
+              },
+              {
+                "title": "JavaScript Básico",
+                "items": [
+                  "Tipos de dados e variáveis",
+                  "Estruturas de controle (if, else, switch)",
+                  "Funções e eventos (cliques, mudanças de valor)",
+                  "Manipulação do DOM"
+                ]
+              }
+            ]
+          },
+          {
+            "level": "Intermediário",
+            "topics": [
+              {
+                "title": "CSS Avançado",
+                "items": [
+                  "Media Queries (Responsividade)",
+                  "Animações e transições CSS",
+                  "Flexbox e Grid Layout"
+                ]
+              },
+              {
+                "title": "JavaScript Intermediário",
+                "items": [
+                  "Funções de array: map(), filter(), reduce()",
+                  "Manipulação avançada do DOM",
+                  "JSON e Fetch API para trabalhar com dados"
+                ]
+              },
+              {
+                "title": "React Básico",
+                "items": [
+                  "O que é React? JSX e Virtual DOM",
+                  "Componentes funcionais e de classe",
+                  "Estado (state) e propriedades (props)",
+                  "Eventos e manipulação de formulários"
+                ]
+              }
+            ]
+          },
+          {
+            "level": "Avançado",
+            "topics": [
+              {
+                "title": "JavaScript Avançado",
+                "items": [
+                  "Closures e escopo léxico",
+                  "Promises e async/await",
+                  "Destructuring e spread/rest operators",
+                  "Módulos ES6"
+                ]
+              },
+              {
+                "title": "React Avançado",
+                "items": [
+                  "Hooks: useState, useEffect, useContext, useReducer",
+                  "Context API",
+                  "Router (React Router)",
+                  "Gerenciamento de estado com Redux ou Context API"
+                ]
+              },
+              {
+                "title": "Performance e Otimização",
+                "items": [
+                  "Técnicas de otimização de performance em React",
+                  "Lazy Loading, Suspense e Code Splitting"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "⚙️ Back-end",
+        "id": "backend",
+        "levels": [
+          {
+            "level": "Iniciante",
+            "topics": [
+              {
+                "title": "Introdução ao Node.js",
+                "items": [
+                  "O que é Node.js e por que usá-lo",
+                  "Instalação do Node.js",
+                  "Criando o primeiro servidor HTTP básico com http module",
+                  "Introdução ao NPM (Node Package Manager)"
+                ]
+              },
+              {
+                "title": "Express.js Básico",
+                "items": [
+                  "O que é Express.js?",
+                  "Criando rotas simples (GET, POST)",
+                  "Middleware no Express",
+                  "Parâmetros de rota e query strings"
+                ]
+              },
+              {
+                "title": "MongoDB Básico",
+                "items": [
+                  "O que é MongoDB e como funciona",
+                  "Instalação do MongoDB",
+                  "Conexão com o MongoDB via Mongoose",
+                  "CRUD básico (Criar, Ler, Atualizar, Deletar)"
+                ]
+              }
+            ]
+          },
+          {
+            "level": "Intermediário",
+            "topics": [
+              {
+                "title": "Autenticação e Autorização",
+                "items": [
+                  "Introdução à autenticação (JWT, Cookies)",
+                  "Registro e login de usuários com Express e JWT",
+                  "Proteção de rotas (middleware de autenticação)"
+                ]
+              },
+              {
+                "title": "Avançando no Express.js",
+                "items": [
+                  "Trabalhando com arquivos estáticos (upload de arquivos)",
+                  "Validação de dados de entrada com express-validator",
+                  "Criação de rotas dinâmicas e complexas"
+                ]
+              },
+              {
+                "title": "MongoDB Avançado",
+                "items": [
+                  "Relacionamentos no MongoDB (populate, referenciamento)",
+                  "Índices para melhorar performance",
+                  "Agregações com MongoDB"
+                ]
+              }
+            ]
+          },
+          {
+            "level": "Avançado",
+            "topics": [
+              {
+                "title": "WebSockets e Tempo Real",
+                "items": [
+                  "Introdução ao WebSocket",
+                  "Implementando comunicação em tempo real com Socket.io",
+                  "Criando um chat em tempo real com Node.js e Socket.io"
+                ]
+              },
+              {
+                "title": "Desenvolvimento de APIs RESTful",
+                "items": [
+                  "Criando APIs RESTful com Express",
+                  "Design e boas práticas para APIs",
+                  "Testando APIs com Postman e Insomnia"
+                ]
+              },
+              {
+                "title": "Deploy e Escalabilidade",
+                "items": [
+                  "Deploy em servidores (Heroku, DigitalOcean, AWS)",
+                  "Uso de Docker para containers",
+                  "Gerenciamento de ambientes com variáveis de ambiente"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

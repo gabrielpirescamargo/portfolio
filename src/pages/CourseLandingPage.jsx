@@ -72,17 +72,18 @@ const CourseLandingPage = () => {
     created_at: "2020-10-02T06:24:22Z",
     updated_at: "2025-03-11T01:38:24Z",
   };
+
   const skills = [
-    { name: "Logica", icon: <BiBrain /> },
-    { name: "Javascript", icon: <SiJavascript /> },
-    { name: "Typescript", icon: <SiTypescript /> },
-    { name: "React.js", icon: <FaReact /> },
-    { name: "Node.js", icon: <FaNodeJs /> },
+    { name: "Logica", icon: <BiBrain color="pink"/> },
+    { name: "Javascript", icon: <SiJavascript color="yellow" /> },
+    { name: "Typescript", icon: <SiTypescript color="deepskyblue" /> },
+    { name: "React.js", icon: <FaReact color="aqua"/> },
+    { name: "Node.js", icon: <FaNodeJs color="lime"/> },
     { name: "Next.js", icon: <SiNextdotjs /> },
-    { name: "HTML", icon: <SiHtml5 /> },
-    { name: "CSS", icon: <SiCss3 /> },
-    { name: "SCSS", icon: <SiSass /> },
-    { name: "Tailwind css", icon: <SiTailwindcss /> },
+    { name: "HTML", icon: <SiHtml5 color="orangered"/> },
+    { name: "CSS", icon: <SiCss3 color="deepskyblue" /> },
+    { name: "SCSS", icon: <SiSass  className="text-pink-500"/> },
+    { name: "Tailwind css", icon: <SiTailwindcss className="text-blue-500"  /> },
   ];
   console.log(courseData);
   return (

@@ -15,10 +15,14 @@ import "../globals.scss";
 import { FaNodeJs, FaReact } from "react-icons/fa";
 import { BiBrain } from "react-icons/bi";
 import { Link } from "react-router-dom";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import CourseCard from "../components/CourseCard";
 
 const CourseLandingPage = () => {
+    useEffect(() => {
+      document.title = "pires code - escola de programação";
+  
+    }, []);
   const userData = {
     login: "gabrielpirescamargo",
     id: 72245726,

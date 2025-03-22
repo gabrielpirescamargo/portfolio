@@ -14,6 +14,8 @@ const UserProfile = () => {
 
   useEffect(() => {
     fetchGitHubData(username, setUserData, setRepos, setLoading);
+    document.title = "Gabriel Pires - Portfolio";
+
   }, []);
 
   if (loading) return <p className="text-center text-zinc-500">Loading...</p>;

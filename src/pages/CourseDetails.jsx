@@ -1,12 +1,17 @@
 import { useParams, useNavigate } from 'react-router-dom';
 import courseData from "../couseData.json";
 import "../globals.scss";
+import { useEffect } from 'react';
 
 const CourseDetails = () => {
   const { id } = useParams();
+ 
   const navigate = useNavigate();
   const course = courseData.courses.find((course) => course.id === id);
 
+  useEffect(() => {
+    document.title =  `pires code - ${course.title}`;
+  }, []);
   if (!course) return <p className="text-white">Course not found</p>;
 
   return (

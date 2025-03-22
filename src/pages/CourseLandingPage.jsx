@@ -19,10 +19,18 @@ import { useEffect, useState } from "react";
 import CourseCard from "../components/CourseCard";
 
 const CourseLandingPage = () => {
-    useEffect(() => {
-      document.title = "pires code - escola de programação";
-  
-    }, []);
+  useEffect(() => {
+    document.title = "pires code - escola de programação";
+  }, []);
+
+  const horarios = [
+    { dia: "Segunda", horario: "20:00 - 22:00" },
+    { dia: "Terça", horario: "20:00 - 22:00" },
+    { dia: "Quarta", horario: "20:00 - 22:00" },
+    { dia: "Quinta", horario: "19:00 - 20:00" },
+    { dia: "Sexta", horario: "19:00 - 20:00" },
+  ];
+
   const userData = {
     login: "gabrielpirescamargo",
     id: 72245726,
@@ -102,9 +110,9 @@ const CourseLandingPage = () => {
       </header>
       <div className=" bg-zinc-900 text-white p-6 ">
         <h1 className="mt-4 text-2xl font-medium text-white lg:mt-6 lg:text-5xl ml-6">
-          Sua carreira em desenvolvimento web 
+          Sua carreira em desenvolvimento web
           <span className="custom-gradient bg-clip-text text-transparent pl-2">
-           do zero ao avançado
+            do zero ao avançado
           </span>
         </h1>
         <section className="p-6    rounded-lg shadow-lg">
@@ -117,6 +125,7 @@ const CourseLandingPage = () => {
             conteúdos de forma eficiente.
           </p>
         </section>
+
         <ul className="list-none flex flex-row ml-6 flex-wrap gap-2">
           {skills.map((skill) => {
             return (
@@ -143,36 +152,97 @@ const CourseLandingPage = () => {
             <CourseCard course={course} key={course.id} />
           ))}
         </div>
-        <section className="text-center mb-10 flex flex-col gap-4 justify-center items-center">
+        <section className="mb-10 flex flex-col gap-4 mx-6">
           <h2 className="text-3xl font-bold mb-6">Planos</h2>
-          <div className="flex flex-col md:flex-row justify-center gap-6 cursor-pointer">
-            <div onClick={() => window.location.href =  'https://wa.me/5519999740273?text=Gostaria%20de%20iniciar%20o%20Plano%20Básico'}  className="bg-zinc-800 p-6 rounded-lg shadow-lg w-78 text-center flex flex-col justify-center items-center transform transition duration-300 hover:scale-105 hover:shadow-2xl">
+          <div className="flex flex-col md:flex-row  gap-6 cursor-pointer">
+            <div
+              onClick={() =>
+                (window.location.href =
+                  "https://wa.me/5519999740273?text=Gostaria%20de%20iniciar%20o%20Plano%20Básico")
+              }
+              className="bg-zinc-800 p-6 rounded-lg shadow-lg w-full text-center flex flex-col justify-center items-center transform transition duration-300 hover:scale-105 hover:shadow-2xl"
+            >
               <h3 className="text-2xl font-bold mb-2">Mensal básico</h3>
               <p className="text-lg mb-4">1 aula por semana (1:00hr)</p>
               <span className="text-3xl font-extrabold">R$100</span>
-              <button className=" cursor-pointer bg-[#00B7EA] hover:bg-[#007EC4] text-white py-2 px-4 rounded-lg w-40 mt-4" href="">
+              <button
+                className=" cursor-pointer bg-[#00B7EA] hover:bg-[#007EC4] text-white py-2 px-4 rounded-lg w-40 mt-4"
+                href=""
+              >
                 Escolher plano
               </button>
             </div>
-            <div onClick={() => window.location.href = 'https://wa.me/5519999740273?text=Gostaria%20de%20iniciar%o%20Plano%20Premium'} className="bg-zinc-800 p-6 rounded-lg shadow-lg w-78 text-center flex flex-col justify-center items-center transform transition duration-300 hover:scale-105 hover:shadow-2xl cursor-pointer">
+            <div
+              onClick={() =>
+                (window.location.href =
+                  "https://wa.me/5519999740273?text=Gostaria%20de%20iniciar%o%20Plano%20Premium")
+              }
+              className="bg-zinc-800 p-6 rounded-lg shadow-lg w-full text-center flex flex-col justify-center items-center transform transition duration-300 hover:scale-105 hover:shadow-2xl cursor-pointer"
+            >
               <h3 className="text-2xl font-bold mb-2">Mensal premium</h3>
               <p className="text-lg mb-4">2 aulas por semana (1:00hr)</p>
               <span className="text-3xl font-extrabold">R$200</span>
-              <button className=" cursor-pointer bg-[#00B7EA] hover:bg-[#007EC4] text-white py-2 px-4 rounded-lg w-40 mt-4" href="">
+              <button
+                className=" cursor-pointer bg-[#00B7EA] hover:bg-[#007EC4] text-white py-2 px-4 rounded-lg w-40 mt-4"
+                href=""
+              >
                 Escolher plano
               </button>
             </div>
           </div>
         </section>
+        <section className="p-6    rounded-lg shadow-lg flex flex-row gap-4 flex-wrap">
+          <div className="w-full  flex flex-col gap-2">
+            <h2 className="text-3xl font-bold mb-4">Sobre as aulas</h2>
+            <p className="text-lg">
+              As aulas serao realizadas ao vivo via Discord, em um servidor
+              proprio dos alunos.
+            </p>
+            <div className="max-w-md mt-6 p-4 border rounded-lg shadow-lg bg-zinc-900">
+              <h2 className="text-xl font-semibold mb-4">
+                Horários Disponíveis
+              </h2>
+              <table className="w-full border-collapse border border-zinc-800">
+                <thead>
+                  <tr className="bg-zinc-800">
+                    <th className="border border-zinc-900 px-4 py-2 text-left">
+                      Dia
+                    </th>
+                    <th className="border border-zinc-900 px-4 py-2 text-left">
+                      Horário
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {horarios.map((item, index) => (
+                    <tr key={index} className="hover:bg-zinc-800">
+                      <td className="border border-zinc-900 px-4 py-2">
+                        {item.dia}
+                      </td>
+                      <td className="border border-zinc-900 px-4 py-2">
+                        {item.horario}
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+           
+          </div>
+          <div className="w-full flex flex-col gap-2">
+          <h2 className="text-3xl font-bold mb-4">Educador</h2>
+            <p className="text-lg">
+            Conheca o educador que ira ministrar as aulas, clique para saber mais
+            </p>
+              <Link to={"/"}>
+                <div className="transform transition duration-300 hover:scale-105 hover:shadow-2xl mt-2">
+                  <ProfileCard userData={userData} />
+                </div>
+              </Link>
+            </div>
+        </section>
 
-       <Link to={'/'}>
-       <div className="transform transition duration-300 hover:scale-105 hover:shadow-2xl">
-       <ProfileCard userData={userData} />
-       </div>
-       </Link>
-        <footer className="text-center mt-10 text-lg">
-       
-        </footer>
+        <footer className="text-center mt-10 text-lg"></footer>
       </div>
     </div>
   );

@@ -204,7 +204,11 @@ const CourseLandingPage = () => {
             </div>
         </section>
 
-        <section className="mb-10 flex flex-col gap-4 mx-6 justify-center lg:text-center ">
+
+      
+      </div>
+
+      <section className="pb-10 flex flex-col gap-4 px-6 justify-center lg:text-center custom-gradient text-white">
           <h2 className="text-3xl font-bold mb-6">Valores</h2>
           <div className="flex flex-col md:flex-row  gap-6 cursor-pointer justify-center">
             <div
@@ -262,9 +266,6 @@ const CourseLandingPage = () => {
             
           </div>
         </section>
-
-        <footer className="text-center mt-10 text-lg"></footer>
-      </div>
     </div>
   );
 };

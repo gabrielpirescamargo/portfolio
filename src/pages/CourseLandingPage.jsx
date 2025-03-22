@@ -139,7 +139,7 @@ const CourseLandingPage = () => {
             <CourseCard course={course} key={course.id} />
           ))}
         </div>
-        <section className="text-center my-10 flex flex-col gap-4 justify-center items-center">
+        <section className="text-center mb-10 flex flex-col gap-4 justify-center items-center">
           <h2 className="text-3xl font-bold mb-6">Planos</h2>
           <div className="flex flex-col md:flex-row justify-center gap-6 cursor-pointer">
             <div onClick={() => window.location.href =  'https://wa.me/5519999740273?text=Gostaria%20de%iniciar%20o%20Plano%20Básico'}  className="bg-zinc-800 p-6 rounded-lg shadow-lg w-78 text-center flex flex-col justify-center items-center transform transition duration-300 hover:scale-105 hover:shadow-2xl">
@@ -162,9 +162,12 @@ const CourseLandingPage = () => {
         </section>
 
        <Link to={'/'}>
-       <ProfileCard userData={userData} /></Link>
+       <div className="transform transition duration-300 hover:scale-105 hover:shadow-2xl">
+       <ProfileCard userData={userData} />
+       </div>
+       </Link>
         <footer className="text-center mt-10 text-lg">
-          <p>Inscreva-se agora e comece sua jornada na programação!</p>
+       
         </footer>
       </div>
     </div>

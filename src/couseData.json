@@ -1,7 +1,7 @@
 {
     "courses": [
       {
-        "title": "🔢 Lógica de Programação",
+        "title": "Lógica de Programação",
         "id": "logica",
         "levels": [
           {
@@ -56,7 +56,7 @@
         ]
       },
       {
-        "title": "💻 Front-end",
+        "title": "Front-end",
         "id": "frontend",
         "levels": [
           {
@@ -154,7 +154,7 @@
         ]
       },
       {
-        "title": "⚙️ Back-end",
+        "title": "Back-end",
         "id": "backend",
         "levels": [
           {

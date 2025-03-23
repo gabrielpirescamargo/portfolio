@@ -2,6 +2,7 @@ import { useParams, useNavigate } from 'react-router-dom';
 import courseData from "../couseData.json";
 import "../globals.scss";
 import { useEffect } from 'react';
+import { BsArrowLeft } from 'react-icons/bs';
 
 const CourseDetails = () => {
   const { id } = useParams();
@@ -19,13 +20,13 @@ const CourseDetails = () => {
       {/* Cabeçalho */}
       <button
           onClick={() => navigate(-1)}
-          className="px-4 py-2 text-white rounded-lg  cursor-pointer absolute left-[32px] top-[24px]"
+          className="cursor-pointer absolute left-[32px] top-6"
         >
-          Voltar
+          <BsArrowLeft size={32}/>
         </button>
       <header className="custom-gradient py-6 shadow-lg text-center">
         
-        <h1 className="text-5xl font-bold">{course.title}</h1>
+        <h1 className="text-xl font-bold">{course.title}</h1>
       </header>
 
       {/* Botão de Voltar */}

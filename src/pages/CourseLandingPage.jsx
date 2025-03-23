@@ -158,7 +158,7 @@ const CourseLandingPage = () => {
           <div className=" flex flex-col gap-2">
             <h2 className="text-3xl font-bold mb-4">Sobre as aulas</h2>
             <p className="text-lg">
-              As aulas serão realizadas ao vivo via Discord, em um servidor exclusivo para os alunos.
+              As aulas serão realizadas ao vivo via Discord, com duração de 1 hora cada, em um servidor exclusivo para os alunos.
             </p>
             <div className="max-w-md mt-6 p-4 border rounded-lg shadow-lg bg-zinc-900">
               <h2 className="text-xl font-semibold mb-4">
@@ -209,34 +209,18 @@ const CourseLandingPage = () => {
       </div>
 
       <section className="pb-10 flex flex-col gap-4 px-6 justify-center lg:text-center custom-gradient text-white">
-          <h2 className="text-3xl font-bold mb-6">Valores</h2>
+          <h2 className="text-3xl font-bold mb-6 mt-6">Planos</h2>
           <div className="flex flex-col md:flex-row  gap-6 cursor-pointer justify-center">
+           
             <div
               onClick={() =>
                 (window.location.href =
-                  "https://wa.me/5519999740273?text=Gostaria%20de%uma%20aula%20Adicional%20")
+                  "https://wa.me/5519999740273?text=Gostaria%20de%20iniciar%20o%20Plano%20Mensal")
               }
-              className="bg-zinc-800 p-6 rounded-lg shadow-lg w-100 text-center flex flex-col justify-center items-center transform transition duration-300 hover:scale-105 hover:shadow-2xl"
+              className="bg-zinc-800 p-6 rounded-lg shadow-lg min-w-80 text-center flex flex-col justify-center items-center transform transition duration-300 hover:scale-105 hover:shadow-2xl"
             >
-              <h3 className="text-2xl font-bold mb-2">Aula adicional</h3>
-              <p className="text-lg mb-4">1 aula (1:00hr)</p>
-              <span className="text-3xl font-extrabold">R$40</span>
-              <button
-                className=" cursor-pointer bg-[#00B7EA] hover:bg-[#007EC4] text-white py-2 px-4 rounded-lg w-40 mt-4"
-                href=""
-              >
-                Escolher plano
-              </button>
-            </div>
-            <div
-              onClick={() =>
-                (window.location.href =
-                  "https://wa.me/5519999740273?text=Gostaria%20de%20iniciar%20o%20Plano%20Básico")
-              }
-              className="bg-zinc-800 p-6 rounded-lg shadow-lg w-100 text-center flex flex-col justify-center items-center transform transition duration-300 hover:scale-105 hover:shadow-2xl"
-            >
-              <h3 className="text-2xl font-bold mb-2">Mensal básico</h3>
-              <p className="text-lg mb-4">1 aula por semana (1:00hr)</p>
+              <h3 className="text-2xl font-bold mb-2">Mensal</h3>
+              <p className="text-lg mb-4">1 aula por semana</p>
               <span className="text-3xl font-extrabold">R$120</span>
               <button
                 className=" cursor-pointer bg-[#00B7EA] hover:bg-[#007EC4] text-white py-2 px-4 rounded-lg w-40 mt-4"
@@ -248,13 +232,30 @@ const CourseLandingPage = () => {
             <div
               onClick={() =>
                 (window.location.href =
-                  "https://wa.me/5519999740273?text=Gostaria%20de%20iniciar%o%20Plano%20Premium")
+                  "https://wa.me/5519999740273?text=Gostaria%20de%20iniciar%20o%20Plano%20Mensal%20Premium")
               }
-              className="bg-zinc-800 p-6 rounded-lg shadow-lg w-100 text-center flex flex-col justify-center items-center transform transition duration-300 hover:scale-105 hover:shadow-2xl cursor-pointer"
+              className="bg-zinc-800 p-6 rounded-lg shadow-lg min-w-80 text-center flex flex-col justify-center items-center transform transition duration-300 hover:scale-105 hover:shadow-2xl cursor-pointer"
             >
               <h3 className="text-2xl font-bold mb-2">Mensal premium</h3>
-              <p className="text-lg mb-4">2 aulas por semana (1:00hr)</p>
+              <p className="text-lg mb-4">2 aulas por semana</p>
               <span className="text-3xl font-extrabold">R$200</span>
+              <button
+                className=" cursor-pointer bg-[#00B7EA] hover:bg-[#007EC4] text-white py-2 px-4 rounded-lg w-40 mt-4"
+                href=""
+              >
+                Escolher plano
+              </button>
+            </div>
+            <div
+              onClick={() =>
+                (window.location.href =
+                  "https://wa.me/5519999740273?text=Gostaria%20de%20uma%20aula%20Adicional%20")
+              }
+              className="bg-zinc-800 p-6 rounded-lg shadow-lg min-w-80 text-center flex flex-col justify-center items-center transform transition duration-300 hover:scale-105 hover:shadow-2xl"
+            >
+              <h3 className="text-2xl font-bold mb-2">Aula adicional</h3>
+              <p className="text-lg mb-4">1 aula</p>
+              <span className="text-3xl font-extrabold">R$40</span>
               <button
                 className=" cursor-pointer bg-[#00B7EA] hover:bg-[#007EC4] text-white py-2 px-4 rounded-lg w-40 mt-4"
                 href=""

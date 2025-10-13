@@ -69,8 +69,7 @@ npm run preview
 
 - **Text & content:** edit files in `src/pages` or `src/data`
 - **Projects:** managed via a `projects.json` and rendered dynamically
-- **Pires Code (Mentorship):** update content in the dedicated route `/mentorship` or equivalent React page
-- **SEO:** adjust `<title>`, meta description, and Open Graph tags in `index.html`
+- **Pires Code (Mentorship):** update content in the dedicated route `/pires-code` or equivalent React page
 
 ---
 
@@ -81,21 +80,6 @@ Deployed on **Vercel**:
 
 Automatically builds and deploys on every push to the `main` branch.
 
----
-
-## 🛣️ Roadmap
-
-- [ ] Add smooth animations with **Framer Motion**
-- [ ] Auto-detect **Dark/Light mode**
-- [ ] Filter projects by stack or category
-- [ ] Contact form via **EmailJS** or **Resend**
-- [ ] Expand **Pires Code** mentorship content (React & Front-End roadmap)
-
----
-
-## 🐛 Contributing
-
-Feel free to open **issues** or **pull requests** for improvements or ideas.
 
 ---
 

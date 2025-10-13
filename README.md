@@ -1,8 +1,104 @@
-# React + Vite
+# Portfolio — Gabriel Pires
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A clean and modern **React + Vite** portfolio showcasing my skills, projects, and professional experience.  
+**Live demo:** [gabrielpires.vercel.app](https://gabrielpires.vercel.app)
 
-Currently, two official plugins are available:
+> 💡 Includes a **dedicated route for React Mentorship — _Pires Code_**, where I share learning paths, course content, and mentoring programs focused on front-end development with React.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
+
+## ✨ Features
+
+- ⚡️ Built with **Vite** for fast performance
+- 🔁 **Hot Module Replacement (HMR)** for instant updates
+- 🧹 Pre-configured **ESLint** setup
+- 🧭 Sections: Hero, About, Skills, Projects, Mentorship, and Contact
+- 📱 Fully **responsive** design
+
+---
+
+## 🧱 Tech Stack
+
+- **React** – Component-based UI
+- **Vite** – Lightning-fast dev server & build
+- **ESLint** – Clean and consistent code
+
+---
+
+## 🚀 Getting Started
+
+Make sure you have **Node.js 18+** and **npm**, **yarn**, or **pnpm** installed.
+
+```bash
+# 1) Install dependencies
+npm install
+
+# 2) Start the dev server
+npm run dev
+
+# 3) Build for production
+npm run build
+
+# 4) Preview the production build
+npm run preview
+```
+
+> These scripts follow the default **Vite** setup.
+
+---
+
+## 🗂️ Project Structure
+
+```txt
+.
+├─ src/
+│  ├─ assets/        # images and icons
+│  ├─ components/    # reusable UI elements
+│  ├─ pages/         # sections (Home, About, Projects, Mentorship, Contact)
+│  ├─ data/          # static JSON for projects, skills, or mentorship content
+│  ├─ styles/        # CSS/SCSS or Tailwind setup
+│  └─ main.jsx       # app entry point
+├─ index.html
+├─ package.json
+└─ vite.config.js
+```
+
+---
+
+## 🧩 Customization
+
+- **Text & content:** edit files in `src/pages` or `src/data`
+- **Projects:** managed via a `projects.json` and rendered dynamically
+- **Pires Code (Mentorship):** update content in the dedicated route `/mentorship` or equivalent React page
+- **SEO:** adjust `<title>`, meta description, and Open Graph tags in `index.html`
+
+---
+
+## 🌐 Deployment
+
+Deployed on **Vercel**:  
+[gabrielpires.vercel.app](https://gabrielpires.vercel.app)
+
+Automatically builds and deploys on every push to the `main` branch.
+
+---
+
+## 🛣️ Roadmap
+
+- [ ] Add smooth animations with **Framer Motion**
+- [ ] Auto-detect **Dark/Light mode**
+- [ ] Filter projects by stack or category
+- [ ] Contact form via **EmailJS** or **Resend**
+- [ ] Expand **Pires Code** mentorship content (React & Front-End roadmap)
+
+---
+
+## 🐛 Contributing
+
+Feel free to open **issues** or **pull requests** for improvements or ideas.
+
+---
+
+## 📜 License
+
+Released under the **MIT License** — free to use and modify with attribution.

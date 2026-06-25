@@ -1,4 +1,4 @@
-import { FaAngular, FaChalkboardTeacher, FaDatabase, FaJava, FaLayerGroup, FaNodeJs, FaReact } from 'react-icons/fa';
+import { FaAngular, FaChalkboardTeacher, FaDatabase, FaLayerGroup, FaNodeJs, FaReact } from 'react-icons/fa';
 import { SiElectron, SiMongodb, SiNextdotjs, SiTypescript } from 'react-icons/si';
 
 const experienceData = [
@@ -15,7 +15,6 @@ const experienceData = [
           { name: 'AngularJS', icon: <FaAngular /> },
           { name: 'React', icon: <FaReact /> },
           { name: 'TypeScript', icon: <SiTypescript /> },
-          { name: 'Java', icon: <FaJava /> },
           { name: 'Carbon Design System', icon: <FaLayerGroup /> },
         ],
         description: [

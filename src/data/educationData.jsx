@@ -2,7 +2,6 @@ import {
   FaJs,
   FaReact,
   FaNodeJs,
-  FaJava,
   FaCss3,
   FaHtml5,
   FaPhp,
@@ -47,7 +46,6 @@ const educationData = [
         ],
         skills: [
           { name: "JavaScript", icon: <FaJs /> },
-          { name: "Java", icon: <FaJava /> },
           { name: "C#", icon: <FaC /> },
           { name: "CSS", icon: <FaCss3 /> },
           { name: "HTML", icon: <FaHtml5 /> },

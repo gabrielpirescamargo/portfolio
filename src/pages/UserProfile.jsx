@@ -5,6 +5,8 @@ import RecentProjects from "../components/RecentProjects";
 import { fetchGitHubData } from "../services/githubService";
 import EducationList from "../components/EducationList";
 import Techs from "../components/Techs";
+import AboutCard from "../components/AboutCard";
+import VolunteeringList from "../components/VolunteeringList";
 
 const UserProfile = () => {
   const [userData, setUserData] = useState(null);
@@ -31,9 +33,10 @@ const UserProfile = () => {
           <RecentProjects repos={repos} />
         </div>
         <div className="w-full flex flex-col gap-4">
-
+          <AboutCard />
           <ExperienceList />
           <EducationList />
+          <VolunteeringList />
         </div>
       </div>
     </div>

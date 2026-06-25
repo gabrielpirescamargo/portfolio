@@ -18,6 +18,16 @@ const EducationList = () => (
           <div key={idx} className="mt-4">
             <h4 className="text-lg font-semibold">{degree.degree}</h4>
             <p className="text-zinc-400">{degree.duration}</p>
+            {degree.grade && (
+              <p className="text-zinc-400 text-sm mt-1">Grade: {degree.grade}</p>
+            )}
+            {degree.description && (
+              <div className="mt-3 space-y-2 text-zinc-300 text-sm leading-relaxed">
+                {degree.description.map((paragraph, paragraphIdx) => (
+                  <p key={paragraphIdx}>{paragraph}</p>
+                ))}
+              </div>
+            )}
             <h4 className="mt-2 font-semibold">Skills:</h4>
             <div className="flex flex-wrap gap-4 mt-2">
               {degree.skills.map((skill, id) => (

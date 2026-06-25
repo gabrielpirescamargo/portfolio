@@ -20,8 +20,8 @@ const Techs = () => {
     { name: 'React.js', icon: <FaReact color='aqua' size={64} /> },
     { name: 'Next.js', icon: <SiNextdotjs size={64} /> },
     {
-      name: 'TypeScript',
-      icon: <SiTypescript color='deepskyblue' size={64} />,
+      name: 'JavaScript',
+      icon: <FaJs color='yellow' size={64} />,
     },
     {
       name: 'Tailwind CSS',
@@ -30,7 +30,10 @@ const Techs = () => {
   ];
 
   const otherTechs = [
-    { name: 'JavaScript', icon: <FaJs color='yellow' size={64} /> },
+    {
+      name: 'TypeScript',
+      icon: <SiTypescript color='deepskyblue' size={64} />,
+    },
     { name: 'Angular', icon: <FaAngular color='red' size={64} /> },
     { name: 'Vue.js', icon: <FaVuejs color='green' size={64} /> },
     { name: 'Node.js', icon: <FaNode color='lime' size={64} /> },

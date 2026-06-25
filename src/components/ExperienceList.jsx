@@ -8,13 +8,18 @@ const ExperienceList = () => (
       {experienceData.map((company, index) => {
         return (
           <div key={index} className='w-full'>
-            <div className='flex flex-row gap-2 items-center mb-2'>
-              <img
-                src={company.logo}
-                alt={`${company.company} logo`}
-                className='w-8 h-8 rounded-full mt-2'
-              />
-              <h3 className='text-xl font-semibold'>{company.company}</h3>
+            <div className='mb-2'>
+              <div>
+                <h3 className='text-xl font-semibold'>{company.company}</h3>
+                {company.employmentType && (
+                  <p className='text-sm text-zinc-400'>
+                    {company.employmentType}
+                  </p>
+                )}
+                {company.location && (
+                  <p className='text-sm text-zinc-500'>{company.location}</p>
+                )}
+              </div>
             </div>
 
             {company.positions?.map((job, idx) => (

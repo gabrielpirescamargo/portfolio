@@ -1,92 +1,50 @@
-import { FaReact, FaAngular, FaNodeJs, FaJs } from 'react-icons/fa';
-
-const monthNames = [
-  'Jan',
-  'Feb',
-  'Mar',
-  'Apr',
-  'May',
-  'Jun',
-  'Jul',
-  'Aug',
-  'Sep',
-  'Oct',
-  'Nov',
-  'Dec',
-];
-function diffInYM(from, to) {
-  let years = to.getFullYear() - from.getFullYear();
-  let months = to.getMonth() - from.getMonth();
-  if (months < 0) {
-    years -= 1;
-    months += 12;
-  }
-  return { years, months };
-}
-function formatYM({ years, months }) {
-  const parts = [];
-  if (years > 0) parts.push(`${years} yr${years > 1 ? 's' : ''}`);
-  if (months > 0) parts.push(`${months} mo${months > 1 ? 's' : ''}`);
-  return parts.join(' ');
-}
-function getDuration(startYear, startMonthIdx /* 0-11 */) {
-  const now = new Date();
-  const from = new Date(startYear, startMonthIdx, 1);
-  const ym = diffInYM(from, now);
-  const range = `${monthNames[startMonthIdx]} ${startYear} - Present`;
-  const tail = formatYM(ym);
-  return `${range} · ${tail}`;
-}
+import { FaAngular, FaChalkboardTeacher, FaDatabase, FaJava, FaLayerGroup, FaNodeJs, FaReact } from 'react-icons/fa';
+import { SiElectron, SiMongodb, SiNextdotjs, SiTypescript } from 'react-icons/si';
 
 const experienceData = [
   {
     company: 'IBM',
     logo: 'https://media.licdn.com/dms/image/v2/D560BAQGiz5ecgpCtkA/company-logo_100_100/company-logo_100_100/0/1688684715866/ibm_logo?e=1762992000&v=beta&t=1v-lZKZC414qC40RivV6Vnn4x5lVoquJUXEO1MqitAg',
+    employmentType: 'Full-time · 4 yrs 1 mo',
     location: 'Hortolândia, São Paulo, Brazil · Hybrid',
     positions: [
       {
         title: 'Senior Software Engineer',
-        duration: getDuration(2024, 11),
+        duration: 'Dec 2024 - Present · 1 yr 7 mos',
         skills: [
-          { name: 'React', icon: <FaReact /> },
           { name: 'AngularJS', icon: <FaAngular /> },
-          { name: 'TypeScript', icon: <FaJs /> },
+          { name: 'React', icon: <FaReact /> },
+          { name: 'TypeScript', icon: <SiTypescript /> },
+          { name: 'Java', icon: <FaJava /> },
+          { name: 'Carbon Design System', icon: <FaLayerGroup /> },
         ],
         description: [
-          'Lead the frontend modernization of a 30-year-old legacy tool into a scalable, design-system–driven platform.',
-          'Contributed to sunsetting and migration to a modern architecture using AngularJS, React, TypeScript and the company design system.',
-          'Collaborated cross-functionally with frontend, backend, design and global stakeholders to align technical and business goals.',
-          'Established and enforced code quality and architectural standards, improving maintainability and onboarding.',
-          'Mentored junior engineers via pair reviews and technical guidance, enhancing team productivity.',
+          'As a Senior Software Engineer, I lead the frontend modernization of a 30-year-old legacy tool into a scalable, design-system-driven platform.',
+          'Contributed to sunsetting and migration of a legacy internal system to a modern architecture using Angular, React, TypeScript, Java and Carbon Design System.',
+          'Collaborated cross-functionally with frontend, backend, and design teams, as well as global stakeholders, to align technical and business goals.',
+          'Established and enforced code quality and architectural standards, improving maintainability and developer onboarding.',
+          'Mentored junior engineers through pair reviews and technical guidance, enhancing overall team productivity.',
         ],
       },
       {
         title: 'Software Engineer',
-        duration: 'May 2023 - Dec 2024 · 1 yr 8 mos',
+        duration: 'Jun 2022 - Dec 2024 · 2 yrs 7 mos',
         skills: [
           { name: 'React', icon: <FaReact /> },
-          { name: 'JavaScript', icon: <FaJs /> },
-          { name: 'TypeScript', icon: <FaJs /> },
+          { name: 'TypeScript', icon: <SiTypescript /> },
+          { name: 'Electron', icon: <SiElectron /> },
+          { name: 'MongoDB', icon: <SiMongodb /> },
+          { name: 'Node.js', icon: <FaNodeJs /> },
+          { name: 'Next.js', icon: <SiNextdotjs /> },
+          { name: 'Carbon Design System', icon: <FaLayerGroup /> },
         ],
         description: [
-          'Developed and maintained global pricing tools focused on performance, UX and legacy modernization.',
-          'Contributed to replacing an outdated pricing tool with React + TypeScript, increasing reliability and usability.',
-          'Implemented UX and performance improvements, enhancing navigation speed and responsiveness.',
-          'Partnered with design and backend to deliver end-to-end solutions for global sales operations.',
-        ],
-      },
-      {
-        title: 'Junior Software Engineer',
-        duration: 'Jun 2022 - May 2023 · 1 yr',
-        skills: [
-          { name: 'React', icon: <FaReact /> },
-          { name: 'Next.js', icon: <FaReact /> },
-          { name: 'JavaScript', icon: <FaJs /> },
-        ],
-        description: [
-          'Joined the engineering team focusing on frontend development and design improvements.',
-          'Worked on UI redesign and frontend refactor of a ticketing tool, improving visual consistency and performance.',
-          'Contributed to three production releases, delivering new features with React and TypeScript.',
+          'Worked developing and maintaining 5+ projects used by IBM internal users, focused on performance, user experience, and modernization of legacy systems.',
+          'Contributed to the full replacement of an outdated pricing tool using React, Electron, MongoDB, Node and TypeScript, increasing reliability and usability for internal users.',
+          'Led and mentored 5+ entry-level developers.',
+          'Implemented UX and performance improvements, enhancing navigation speed and overall responsiveness.',
+          'Collaborated with design and backend teams to deliver end-to-end solutions supporting IBM’s global sales operations.',
+          'Worked on the UI redesign and frontend refactor of a ticketing tool, improving visual consistency and performance using React, Next, TypeScript and Carbon Design System.',
         ],
       },
     ],
@@ -94,20 +52,25 @@ const experienceData = [
   {
     company: 'Pires Code',
     logo: 'https://media.licdn.com/dms/image/v2/D4D0BAQEptHEs_JGiCw/company-logo_100_100/B4DZW_lTyIGkAQ-/0/1742676038858?e=1762992000&v=beta&t=LUel7EJT_tKqmByq9afWbfuwVT8elPMqcL1qEtKQ9iY',
+    employmentType: 'Freelance',
     location: 'Remote',
     positions: [
       {
-        title: 'Educator (Freelance)',
-        duration: getDuration(2025, 2),
+        title: 'Educator',
+        duration: 'Mar 2025 - Present · 1 yr 4 mos',
         skills: [
           { name: 'React', icon: <FaReact /> },
+          { name: 'TypeScript', icon: <SiTypescript /> },
           { name: 'Node.js', icon: <FaNodeJs /> },
-          { name: 'JavaScript', icon: <FaJs /> },
+          { name: 'MongoDB', icon: <FaDatabase /> },
+          { name: 'Teaching', icon: <FaChalkboardTeacher /> },
         ],
         description: [
-          'One-on-one mentorship programs in web dev and full-stack engineering with hands-on, project-based learning.',
+          'Founder and instructor at Pires Code, providing one-on-one mentorship programs in web development and full-stack engineering.',
+          'Teaching approach focused on hands-on learning and real-world problem-solving through pair programming.',
           'Mentored four students individually across complete frontend and backend projects.',
-          'Designed a learning methodology combining React, Node.js and database fundamentals; frequent pair programming.',
+          'Designed a project-based learning methodology combining React, Node.js, TypeScript, Tailwind, Redux, MongoDB and database fundamentals.',
+          'Conducted pair programming sessions, enabling students to learn by building real applications in practice.',
         ],
       },
     ],
@@ -115,6 +78,7 @@ const experienceData = [
   {
     company: 'Argos Construtora e Arquitetura',
     logo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1TuqjkPP87sgqvtJVFuiYAyCN78C6Q1JFUw&s',
+    employmentType: 'Internship',
     location: 'Americana, São Paulo, Brazil · On-site',
     positions: [
       {
